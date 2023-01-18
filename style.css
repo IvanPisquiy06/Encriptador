@@ -1,0 +1,178 @@
+body{
+    background-color: #CACACA;
+}
+
+header{
+    width: 100%;
+    position: relative;
+    margin: auto 0;
+}
+
+.titulo{
+    font-size: 50px;
+    color: #202022;
+    margin: 10px auto;
+    position: relative;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#horizontal{
+    border: 1px solid darkblue;
+}
+
+#instrucciones{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #878787;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mensajes{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.areas{
+    border: none;
+    display: inline-block;
+    margin: 30px;
+    resize: none;
+    padding: 10;
+    outline: none;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#mensaje{
+    background-color: rgb(107, 160, 190);
+    border-radius: 10px;
+    color: white;
+}
+
+.vertical{
+    height: 500px;
+    width: 0.1cm;
+    border-width:0;
+    border-radius: 5px;
+    color: rgb(156, 156, 156);
+    background-color:rgb(156, 156, 156);
+    display: inline-block;
+}
+
+#resultado{
+   color: black;
+   background-color: white;
+   border-radius: 10px;
+}
+
+.area-botones{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.botones{
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+#encriptar{
+    padding: 30px 40px;
+    margin-left: 30px;
+    background-color: rgb(107, 160, 190);
+}
+
+#desencriptar{
+    padding: 30px 20px;
+    margin-left: 20px;
+    background-color: rgb(107, 160, 190);
+}
+
+#copy{
+    padding: 30px 70px;
+    margin-left: 160px;
+    background-color: white;
+}
+
+.botones:hover{
+    transform: scale(1.05);
+}
+
+#encriptar:hover{
+    background-color: rgb(44,99,129);
+    color: white;
+}
+
+#desencriptar:hover{
+    background-color: rgb(44,99,129);
+    color: white;
+}
+
+#copy:hover{
+    background-color:rgb(156, 156, 156);
+    color: white;
+}
+
+@media screen and (max-width:480px){
+
+    header{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .titulo{
+        font-size: 24px;
+    }
+
+    #instrucciones{
+        font-size: 15px;
+    }
+
+    .mensajes{
+        width: 100%;
+        display: block;
+    }
+
+    .vertical{
+        display: none;
+    }
+
+    .areas{
+        display: block;
+        width: 70%;
+        height: 250px;
+        margin: 30px auto;
+        }
+
+   .area-botones{
+    width: 100%;
+   }
+
+   #encriptar{
+   display: block;
+    margin-left: 0px;
+    margin: 20px auto;
+}
+
+#desencriptar{
+    display: block;
+    margin-left: 0px;
+    margin: 20px auto;
+}
+
+#copy{
+    display: block;
+    margin-left: 0px;
+    margin: 20px auto;
+}
+
+}

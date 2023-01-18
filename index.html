@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" lang="esp">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1 class="titulo">Encriptador/Desencriptador</h1>
+            <p id="instrucciones">¡Bienvenido al Encriptador! Por favor, ingrese su mensaje en el cuadro siguiente con el mensaje que desea desencriptar o encriptar y presione el botón correspondiente a continuación.</p>
+        </header>
+
+        <main>
+
+            <div class="mensajes">
+                <textarea placeholder="Su mensaje va aquí" id="mensaje" cols="25" rows="15" class="areas"></textarea>
+                <hr class="vertical">
+                <textarea id="resultado" readonly="readonly" class="areas" cols="25" rows="15" placeholder="Su mensaje encriptado/desencriptado irá aquí"></textarea >
+            </div>
+
+            <div class="area-botones">
+                <input type="button" id="encriptar" value="Encriptar" onclick="encript()" class="botones">
+                <input type="button" id="desencriptar" value="Desencriptar" class="botones" onclick="desencrypt()">
+                <input type="button" id="copy" value="Copiar" class="botones" onclick="copy('resultado')">
+            </div>
+
+            <script src="proceso.js"></script>
+        </main>
+
+    </body>
+</html>
